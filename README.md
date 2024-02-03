@@ -109,8 +109,18 @@
 - SQL injection을 허용하는 Form을 발견하여 union 공격을 시도하여 관리자 test 계정과 관리자 페이지 계정 정보를 조회 할 수 있는 SQL injection 취약점을 발견했다. 이 취약점은 웹 서버 운영에 큰 피해를 줄 수 있는 큰 취약점 발견.
 
 ## 부적절한 서버 설정
+1. 서버 설정 여부[부적절]
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/23a07637-9918-48ef-8c7b-c2eed8d7c07e)
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/f4de18b1-4500-4474-ab05-52219bb4af96)
+- 웹서버 부적절한 설정으로 탈취한정보로 로그인을 했으나 오류 메시지 반환.
+2. 파일 업로드 취약점을 이용하여 웹쉘을 통해 소스파일 분석
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/6ebde9e8-64ae-4589-852b-c312ee0759b0)
 
-
+3. sqlmap을 사용하여 sell_man 테이블 dump
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/505e9dfa-5e23-4a4a-9ae6-1ba0ab372ffc)
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/04f2330d-da85-474b-8bf3-d2a02bdf8d43)
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/f6e4dbe6-024d-4ce0-8541-54df9fb0f8de)
+- 부적절한 웹 서버 설정으로 인한 오류를 반환 하는 페이지 정보를 수집하였고, 파일 업로드 취약점을 이용하여 웹쉘을 업로드하였고 이를 이용하여 수집한 정보를 기반으로 소스코드를 모두 확인하여 oyesmall데이터베이스의 sell_man 테이블의 total_p컬럼이 <blank>여서 올바른 데이터임에도 접속이 불가능 하였다. 또한 SQL Injection이 통하는 폼을 위에서 찾았기에 union문을 통해 sell_man 테이블의 total_p 컬럼의 값을 넣어 변조하였고, 다시 admin페이지에 로그인 성공을하여 admin 권한을 탈취.
 
 
 
