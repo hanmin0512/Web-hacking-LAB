@@ -31,7 +31,13 @@
   </tr>
 </table>
 
-##
+- BP-001: 취약한 패스워드 설정 여부
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/46e316de-101a-4cc1-b9b1-f1241ecd2bd2)
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/25bd9f18-27de-45bc-a0b0-5124540c59e6)
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/6b225ef2-d98d-4abe-a904-0d56869fc769)
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/3207b729-1f54-4d47-aa07-80332308afb1)
+  - 취약한 패스워드 회원가입 시도
+> ![image](https://github.com/hanmin0512/Web-hacking-LAB/assets/37041208/537d503c-071a-4db2-9643-c4089e135969)
 
 
 
